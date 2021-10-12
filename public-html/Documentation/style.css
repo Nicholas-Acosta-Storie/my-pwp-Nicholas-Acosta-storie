@@ -1,0 +1,25 @@
+html {
+    background-color: white;
+}
+
+h1 {
+    background-color: #556B2F;
+    opacity: 0.7;
+    width: 10%;
+    border-radius: 10px;
+    border: 4px #556B2F;
+    font-family: "Arial Rounded MT Bold";
+    font-size: 150%;
+    text-align: center;
+    color: white;
+    border-style: inset;
+    padding-top: .1em;
+}
+
+p {
+    font-size: 125%;
+}
+
+ul {
+    font-size: 125%;
+}
