@@ -47,6 +47,12 @@ p {
     text-shadow: 2px 2px 5px #6B8E23;
 }
 
+img {
+    height: 300px;
+    width: 550px;
+}
+
+
 ul {
     font-size: 125%;
 }
