@@ -20,7 +20,7 @@ header {
     border-radius: 10px;
     border: 1px groove #556B2F;
     font-family: "Arial Rounded MT Bold", serif;
-    font-size: 150%;
+    font-size: 200%;
     text-align: center;
     color: white;
     padding-top: .3em;
@@ -66,10 +66,10 @@ footer {
     font-family: "Arial Rounded MT Bold", serif;
     font-size: 100%;
     text-align: center;
-    color: white;
+    color: darkolivegreen;
     padding-top: 1px;
     padding-bottom: 1px;
-    text-shadow: 3px 3px 6px #CD853F;
+    /*text-shadow: 3px 3px 6px white;*/
     text-align: center;
 
 }
