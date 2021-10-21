@@ -1,0 +1,44 @@
+body {
+    background: url('https://images.wilsonart.com/media/catalog/product/cache/b66ec2c0d143bbfe0cd01d94af869e2e/y/0/y0792x_misty_mountains_landscape_full_size_view.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: black;
+    opacity: 0.7;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px groove #556B2F;
+    font-family: "Arial Rounded MT Bold", serif;
+    font-size: 200%;
+    text-align: center;
+    color: white;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    text-shadow: 3px 3px 6px #CD853F;
+    text-align: center;
+}
+
+h1 {
+    background-color: #556B2F;
+    opacity: 0.7;
+    width: 10%;
+    border-radius: 10px;
+    border: 7px inset #556B2F;
+    font-family: "Arial Rounded MT Bold", serif;
+    font-size: 200%;
+    text-align: center;
+    color: white;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    text-shadow: 5px 5px 9px #CD853F;
+}
+
+p {
+    font-size: 250%;
+    color: black;
+    font-size: x-large;
+    text-shadow: 2px 2px 5px #6B8E23;
+}
