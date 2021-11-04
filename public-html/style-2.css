@@ -10,7 +10,7 @@ h1 {
 }
 
 
-p1 {
+p {
     color: rgb(175,181,176);
     font-size: 25px;
     font-family: "Arial Rounded MT Bold";
@@ -52,7 +52,7 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
     color: black;
-    text-shadow: darkolivegreen;
+
 }
 
 #link3 {
@@ -61,6 +61,6 @@ img {
     left: 75%;
     transform: translate(-50%, -50%);
     color: black;
-    text-shadow: darkolivegreen;
+
 }
 
