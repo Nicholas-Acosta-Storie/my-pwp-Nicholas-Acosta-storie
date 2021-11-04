@@ -1,0 +1,66 @@
+html {
+    background-color: rgba(33,37,41,255)
+}
+
+body {
+    background-color: rgba(33,37,41,255)
+}
+h1 {
+    color: rgb(175,181,176);
+}
+
+
+p1 {
+    color: rgb(175,181,176);
+    font-size: 25px;
+    font-family: "Arial Rounded MT Bold";
+}
+
+img {
+    width: auto;
+    height: 150px;
+}
+
+#backpacking {
+    width: 750px;
+    height: 400px;
+}
+
+#hiking {
+    width: 750px;
+    height: 400px;
+}
+
+#camping {
+    width: 750px;
+    height: 400px;
+}
+
+
+#link1 {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-weight: 10px;
+}
+
+#link2 {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-shadow: darkolivegreen;
+}
+
+#link3 {
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: black;
+    text-shadow: darkolivegreen;
+}
+
