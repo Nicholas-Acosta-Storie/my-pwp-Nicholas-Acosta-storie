@@ -4,7 +4,7 @@
 
 
 html,body {
-    background-image: url('images/pwp-background-13.jpg');
+    background-image: url('images/new-background.jpg');
 }
 
 
@@ -80,20 +80,34 @@ img {
 }
 
 
+
+
+
 #link1 {
     color: white;
     text-decoration: 20px;
     text-shadow: gray;
+    font-size: 3em;
+    font-weight: bold;
+
 }
 
 #link2 {
     color: white;
+    text-decoration: 20px;
+    text-shadow: gray;
+    font-size: 3em;
+    font-weight: bold;
 
 
 }
 
 #link3 {
     color: white;
+    text-decoration: 20px;
+    text-shadow: gray;
+    font-size: 3em;
+    font-weight: bold;
 
 
 
