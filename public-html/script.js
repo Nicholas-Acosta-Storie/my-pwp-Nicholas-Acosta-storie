@@ -9,7 +9,10 @@ $(document).ready(function (){
         //
         rules: {
             name: {
-                required: "true"
+                required: true
+            },
+            lastName: {
+                required: true
             },
             email: {
                 email: true,
@@ -23,6 +26,9 @@ $(document).ready(function (){
         messages: {
             name: {
                 required: "Name is a required field"
+            },
+            lastName: {
+                required: "last name is a required field"
             },
             email: {
                 email: "Please provide a valid email",
