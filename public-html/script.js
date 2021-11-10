@@ -55,3 +55,21 @@ $(document).ready(function (){
         }
     })
 })
+
+mapboxgl.accessToken = 'pk.eyJ1IjoibmFjb3N0YXN0b3JpZSIsImEiOiJja3Zza3doODY0cHFuMnZtbGZhZGRtZGVzIn0.mPHC_J_FbbiAaYLoK8NEjA';
+const map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/outdoors-v11',
+    center: [-106.6504,35.0844],
+    zoom: 5
+});
+
+// Create a default Marker and add it to the map.
+const marker1 = new mapboxgl.Marker()
+    .setLngLat([-105.9378, 35.6870])
+    .addTo(map);
+
+// Create a default Marker, colored black, rotated 45 degrees.
+// const marker2 = new mapboxgl.Marker({ color: 'black', rotation: 45 })
+//     .setLngLat([12.65147, 55.608166])
+//     .addTo(map);
