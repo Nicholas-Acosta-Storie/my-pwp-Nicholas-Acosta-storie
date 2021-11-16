@@ -1,10 +1,11 @@
-*{
-    box-sizing: border-box;
-}
+/**{*/
+/*    box-sizing: border-box;*/
+/*}*/
 
 
 html,body {
-    background-image: url('images/new-background.jpg');
+    background-image: url('images/background-4.jpg');
+    background-size: auto;
     font-family: "Trebuchet MS", 'sans-serif';
 }
 
@@ -15,25 +16,26 @@ h1 {
 
 
 p {
-    color: rgb(175,181,176);
-    font-size: 25px;
+    color: white;
+    font-size: 20px;
 
 }
-
 /*img {*/
 /*    width: auto;*/
 /*    height: 150px;*/
 /*}*/
 
 #backpacking {
-    /*width: 550px;*/
-    /*height: 350px;*/
+    width: 550px;
+    height: 350px;
     border-radius: 5%;
 }
 
-#backpacking-list {
-    color: rgb(175,181,176);
+#backpacking-list, #hiking-list,#camping-list, #locations {
+    color: white;
+    font-size: 20px;
 }
+
 
 #hiking {
     width: 550px;
@@ -51,54 +53,56 @@ p {
     justify-content: center;
 }
 
-#gallery-1 {
+#gallery-1,#gallery-2,#gallery-3,#gallery-4,#gallery-5,#gallery-6 {
     width: 100%;
     height: auto;
     align-items: center;
+    object-fit: cover;
 
 }
 
-#gallery-2 {
-    width: 100%;
-    height: auto;
-    align-items: center;
-}
+/*#gallery-2 {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    align-items: center;*/
+/*}*/
 
-#gallery-3 {
-    width: 100%;
-    height: auto;
-    align-items: center;
-}
+/*#gallery-3 {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    align-items: center;*/
+/*}*/
 
-#gallery-4 {
-    width: 100%;
-    height: auto;
-    align-items: center;
-}
+/*#gallery-4 {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    align-items: center;*/
+/*}*/
 
-#gallery-5 {
-    width: 100%;
-    height: auto;
-    align-items: center;
-}
+/*#gallery-5 {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    align-items: center;*/
+/*}*/
 
-#gallery-6 {
-    width: 100%;
-    height: auto;
-    align-items: center;
-}
+/*#gallery-6 {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    align-items: center;*/
+/*}*/
 
-#gallery-7 {
-    width: 100%;
-    height: auto;
-    align-items: center;
-}
+/*#gallery-7 {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    align-items: center;*/
+/*}*/
 
-#gallery-8 {
-    width: 100%;
-    height: auto;
-    align-items: center;
-}
+/*#gallery-8 {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    align-items: center;*/
+
+/*}*/
 
 .navbar-nav > a {
     color: white !important;
@@ -150,10 +154,6 @@ p {
     position: absolute;
 }
 
-
-
-
-
 .carousel-image-wrapper {
     position: relative;
     width: auto;
@@ -164,6 +164,7 @@ p {
 .carousel-image__img {
     display: block;
     width: 100%;
+    aspect-ratio: 16 / 9;
 }
 
 .carousel-image__overlay {

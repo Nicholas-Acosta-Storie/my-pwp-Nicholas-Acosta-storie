@@ -21,7 +21,7 @@ $(document).ready(function (){
             message: {
                 required: true,
                 maxLength: 2000
-            }
+            },
         },
         messages: {
             name: {
@@ -37,7 +37,7 @@ $(document).ready(function (){
             message: {
                 required: "A message is required",
                 maxLength: "Message must be 2000 characters or less"
-            }
+            },
         },
         submitHandler: (form) => {
             $("#contact").ajaxSubmit({
@@ -65,11 +65,38 @@ const map = new mapboxgl.Map({
 });
 
 // Create a default Marker and add it to the map.
+//santa fe point of reference
 const marker1 = new mapboxgl.Marker()
     .setLngLat([-105.9378, 35.6870])
     .addTo(map);
 
+///trampus trail
+const marker2 = new mapboxgl.Marker()
+    .setLngLat([-105.6370, 35.9932])
+    .addTo(map);
+
+//baldy trail
+const marker3 = new mapboxgl.Marker()
+    .setLngLat([-105.8045018, 35.79531126])
+    .addTo(map);
+
+//Aspen Basin Campground
+const marker4 = new mapboxgl.Marker()
+    .setLngLat([-105.8058373, 35.79445866])
+    .addTo(map);
+
+//Tesuque Creek Trail #152
+const marker5 = new mapboxgl.Marker()
+    .setLngLat([-105.827457, 35.7758511])
+    .addTo(map);
+
+//la luz trail
+const marker6 = new mapboxgl.Marker()
+    .setLngLat([-106.4521, 35.2049])
+    .addTo(map);
+
+
 // Create a default Marker, colored black, rotated 45 degrees.
-// const marker2 = new mapboxgl.Marker({ color: 'black', rotation: 45 })
+// const marker7 = new mapboxgl.Marker({ color: 'black', rotation: 45 })
 //     .setLngLat([12.65147, 55.608166])
 //     .addTo(map);
