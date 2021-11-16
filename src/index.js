@@ -11,9 +11,9 @@ const {request, response} = require("express");
 
 
 const validation = [
-    check('name','Name is a required field').not().isEmpty().trim().escape(),
-    check('lastname','Name is a required field').not().isEmpty().trim().escape(),
-    check('email','Please provide a valid email').not().isEmpty().trim().escape(),
+    check('name', 'Name is a required field').not().isEmpty().trim().escape(),
+    // check('lastname','Name is a required field').not().isEmpty().trim().escape(),
+    check('email','Please provide a valid email').isEmail(),
     // check('subject').optional().trim().escape(),
     check('message','A message is required').trim().escape().isLength({min:1, max:2000}),
 ]
@@ -38,30 +38,31 @@ const handlePostRequest = (request, response) => {
 
     if (request.recaptcha.error) {
         return response.send(
-            `<div class="alert alert-danger" role="alert"><strong>Oh Snap!</strong>There was a recaptcha error. Please try again</div>`
+            `<div class="alert alert-danger" role="alert"><strong>Oh Snap1!</strong>There was a recaptcha error. Please try again</div>`
         )
     }
     const errors = validationResult(request)
 
     if (errors.isEmpty() === false){
         const currentError = errors.array()[0]
-        return response.send(`<div class="alert alert-danger" role="alert"><strong>Oh Snap!</strong>${currentError}</div>\``)
+        console.log(currentError)
+        return response.send(`<div class="alert alert-danger" role="alert"><strong>Oh Snap2!</strong>${currentError}</div>`)
     }
-    const {name, lastname, email, message} = request.body
+    const {name, email, message} = request.body
     const mailgunData = {
         to: process.env.MAIL_RECIPIENT,
         from: `${name} <postmaster@${process.env.MAILGUN_DOMAIN}>`,
-        subject: `${email}: ${subject}`,
+        subject: email,
         text: message
     }
     mg.messages.create(process.env.MAILGUN_DOMAIN, mailgunData)
         .then(msg =>
         response.send(
-            `<div class='alert alert-success' role='alert'>${JSON.stringify(msg)}</div>`
+            `<div class='alert alert-success' role='alert'>email successfully sent</div>`
         ))
         .catch(err =>
-    response.send(
-        `<div class='alert alert-danger' role='alert'><strong>Oh Snap!</strong>${err}</div>`
+            response.send(
+        `<div class='alert alert-danger' role='alert'><strong>Oh Snap3!</strong>${err}</div>`
     ))
 }
 
