@@ -59,7 +59,7 @@ p {
     color: rgba(255,255,255,100);
 }
 
-/*section images*/
+/*section images2*/
 #backpacking, #hiking ,#camping{
     width: 100%;
     height: auto;
@@ -73,7 +73,7 @@ p {
     justify-content: center;
 }
 
-/*carosel images*/
+/*carosel images2*/
 #gallery-1,#gallery-2,#gallery-3,#gallery-4,#gallery-5,#gallery-6 {
     width: 100%;
     height: auto;
